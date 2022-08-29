@@ -6,10 +6,19 @@
 
 .header {
   grid-column: 2;
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  align-items: center;
+  gap: 30px;
+  padding: 0px 20px;
 }
 
 .nav {
   grid-column: 2;
+  display: grid;
+  grid-template-columns: auto 1fr 1fr;
+  align-items: center;
+  padding: 10px 20px;
 }
 
 .sidebar {
@@ -47,4 +56,51 @@
   align-items: center;
   gap: 8px;
   font-size: 20px;
+}
+
+input {
+  background-color: rgb(237, 233, 229);
+  border-radius: 15px;
+  border-color: rgb(220, 220, 220);
+}
+
+.cat {
+  height: 35px;
+}
+
+.user-info,
+.search {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-weight: bold;
+}
+
+.cat2 {
+  height: 45px;
+  margin-right: 10px;
+}
+
+.action {
+  justify-self: end;
+  display: flex;
+  gap: 15px;
+}
+
+button {
+  background-color: rgb(84, 130, 84);
+  border-radius: 15px;
+  color: white;
+  width: 60px;
+  height: 25px;
+  border: none;
+}
+
+.small {
+  font-size: 13px;
+}
+
+.big {
+  font-size: 20px;
+  font-weight: bold;
 }
